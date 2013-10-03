@@ -1,0 +1,31 @@
+This project contains code for a bluetooth controlled, semi-autonomous robot. Originally implemented on a Digilent Cerebot MX2 board with a Microchip PIC32. 
+
+The robot can be remotely controlled over UART or bluetooth, with the proper hardware. Also supports a character display, for debugging and typing messages to people observing the robot.
+
+Once a control interface is established, the controls are as follows:
+	w - forward full speed
+	s - stop
+	q - increment motor 1 speed
+	e - increment motor 2 speed
+	a - decrement motor 1 speed
+	d - decrement motor 2 speed
+	z - reverse motor 1 direction
+	c - reverse motor 2 direction
+	u - circle pattern
+	i - square pattern
+	o - figure 8 pattern
+	p - triangle pattern
+	l - line following mode
+
+Required hardware:
+	PIC32 Microcontroller development board
+	H-Bridge module/modules (for driving 2 motors)
+	2 motors
+	Robot Chassis and parts (wheels, tires, hardware, etc.)
+
+Optional hardware:
+	Bluetooth UART module
+	LCD Character display screen
+	UART interface
+
+Port mapping should be changed based on your specific microcontroller and dev board.
